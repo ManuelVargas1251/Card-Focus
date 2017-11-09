@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
   </head>
 
 
@@ -14,7 +15,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Lightning Design System</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,11 +50,14 @@
       </div>
     </nav>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron text-center">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p> 
-    </div>
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
 
     <div class="container px4">
       <h1>Hello, world!</h1>
@@ -62,24 +66,34 @@
 
     <div class="container">
       <div class="row">
-        
+
+
+        <!-- Card Focus -->
         <div id="card_1" class="col-sm">
           <div  class="card my-3">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              
+              <h4 class="card-title">Lighting Focus III</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Lighting</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-              <video id="v1" width="100%" height="30%" controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+              <video id="v1"  class="py-4" controls controlsList="nodownload">
+                <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
                 Your browser does not support the video tag.
               </video>
 
-              <div id="card_button_1" class="btn btn-primary">Watch Now</div>
+              
+              
+              <div id="card_button_1" class="btn btn-primary btn--open">Watch Now</div>
+              
             </div>
           </div>
         </div>
+        <!-- End of Card Focus -->
+
 
         <div id="card_2" class="col-sm">
           <div class="card my-3" >
@@ -87,7 +101,7 @@
               <h4 class="card-title">Card title</h4>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary disabled">Go somewhere</a>
             </div>
           </div>
         </div>
@@ -98,12 +112,66 @@
               <h4 class="card-title">Card title</h4>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary disabled">Go somewhere</a>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row">
+        
+        <div id="card_2" class="col-sm">
+          <div class="card my-3" >
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="card_2" class="col-sm">
+          <div class="card my-3" >
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="card_3" class="col-sm">
+          <div  class="card my-3" >
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -123,6 +191,6 @@
             crossorigin="anonymous"></script>
     <!--  my js  -->
     <script src="index.js"></script>
-    
+
   </body>
 </html>
