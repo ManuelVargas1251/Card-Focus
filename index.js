@@ -20,4 +20,6 @@ $("#card_button_1").click(function(){
 	$(".btn--open").text("Watch Now");
 	$(".btn--close").text("Close");
 	
+	//var $input = $('<input type="button" value="new button" />');
+    //$input.appendTo($("body"));
 });
