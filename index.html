@@ -7,14 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
 
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#">Lightning Design System</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,7 +53,7 @@
     </nav>
 
     <!-- Breadcrumbs -->
-    <nav aria-label="breadcrumb" role="navigation">
+    <nav class="sticky-top" aria-label="breadcrumb" role="navigation">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
         <li class="breadcrumb-item"><a href="#">Library</a></li>
@@ -72,9 +74,9 @@
         <div id="card_1" class="col-sm">
           <div  class="card my-3">
             <div class="card-body">
-              
+
               <h4 class="card-title">Lighting Focus III</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Lighting</h6>
+              <h6 class="card-subtitle mb-2 text-muted">2hrs 45min</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
               <video id="v1"  class="py-4" controls controlsList="nodownload">
@@ -85,10 +87,17 @@
                 Your browser does not support the video tag.
               </video>
 
-              
-              
+
+
               <div id="card_button_1" class="btn btn-primary btn--open">Watch Now</div>
-              
+              <div id="card_button_2" class="btn btn-secondary btn--open mx-2">Open Folder</div>
+              <div class="text-right">
+                <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="card-footer text-muted">
+              2 days ago
             </div>
           </div>
         </div>
@@ -119,7 +128,7 @@
       </div>
 
       <div class="row">
-        
+
         <div id="card_2" class="col-sm">
           <div class="card my-3" >
             <div class="card-body">
@@ -155,20 +164,6 @@
       </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
