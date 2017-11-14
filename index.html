@@ -10,13 +10,44 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="animate.css">
   </head>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          This is what should come up when first starting the desktop app
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
 
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="#">Lightning Design System</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -62,8 +93,13 @@
     </nav>
 
     <div class="container px4">
-      <h1>Hello, world!</h1>
-      <p>This is a sentence.</p>
+      <h1>Browse</h1>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>
+
     </div>
 
     <div class="container">
@@ -71,15 +107,15 @@
 
 
         <!-- Card Focus -->
-        <div id="card_1" class="col-sm">
-          <div  class="card my-3">
+        <div id="card_1" class="col-sm my-3">
+          <div class="card">
             <div class="card-body">
 
               <h4 class="card-title">Lighting Focus III</h4>
               <h6 class="card-subtitle mb-2 text-muted">2hrs 45min</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-              <video id="v1"  class="py-4" controls controlsList="nodownload">
+              <video id="v1" class="py-4" controls controlsList="nodownload">
                 <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
                 <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
                 <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
@@ -88,43 +124,68 @@
               </video>
 
 
-
-              <div id="card_button_1" class="btn btn-primary btn--open">Watch Now</div>
-              <div id="card_button_2" class="btn btn-secondary btn--open mx-2">Open Folder</div>
-              <div class="text-right">
-                <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-              </div>
             </div>
 
-            <div class="card-footer text-muted">
-              2 days ago
+            <div class="card-footer text-muted ">
+              <div id="card_button_1" class="btn btn-primary btn--open">Watch Now</div>
+              <div id="card_button_2" class="btn btn-secondary btn--open mx-2">Open Folder</div>
+              <i id="h-1" class="fa fa-heart-o fa-2x float-right" aria-hidden="true"></i>
             </div>
           </div>
         </div>
         <!-- End of Card Focus -->
 
 
-        <div id="card_2" class="col-sm">
-          <div class="card my-3" >
+        <div id="card_2" class="col-sm my-3">
+          <div class="card">
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+
+              <video id="v2" class="py-4" controls controlsList="nodownload">
+                <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                Your browser does not support the video tag.
+              </video>
             </div>
+
+            <div class="card-footer text-muted ">
+              <div id="card_button_1" class="btn btn-primary btn--open">Watch Now</div>
+              <i id="h-1" class="fa fa-heart-o fa-2x float-right" aria-hidden="true"></i>
+            </div>
+
           </div>
         </div>
 
-        <div id="card_3" class="col-sm">
-          <div  class="card my-3" >
+        <div id="card_3" class="col-sm my-3">
+          <div  class="card">
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+
+              <video id="v3" class="py-4" controls controlsList="nodownload">
+                <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                Your browser does not support the video tag.
+              </video>
+
             </div>
+
+            <div class="card-footer text-muted ">
+              <div id="card_button_1" class="btn btn-primary btn--open">Watch Now</div>
+              <i id="h-1" class="fa fa-heart-o fa-2x float-right" aria-hidden="true"></i>
+            </div>
+
           </div>
         </div>
+
+
       </div>
 
       <div class="row">

@@ -1,5 +1,5 @@
 //initially hide video player 1
-$("#v1").hide();
+$("#v1, #v2, #v3").hide();
 $("#card_button_2").hide();
 
 $(".btn--open").text("Watch Now");
@@ -15,7 +15,9 @@ $("#card_button_1").click(function(){
 	
 	$("#card_button_2").toggle();
 	
-	$("#card_button_1").toggleClass("btn-primary, btn-danger").toggleClass("btn--open, btn--close");
+	$("#card_button_1")
+		.toggleClass("btn-primary, btn-danger")
+		.toggleClass("btn--open, btn--close");
 
 
 	$(".btn--open").text("Watch Now");
@@ -24,5 +26,10 @@ $("#card_button_1").click(function(){
 
 });
 
-
-$(".fa-heart-o").hover()
+//favoriting a video
+$("#h-1").click(function(){
+	$("#h-1").toggleClass("fa-heart-o")
+		.toggleClass("fa-heart")
+		.toggleClass("animated tada")
+		.toggleClass("favorited");
+});

@@ -1,5 +1,5 @@
 html {
-  overflow:   scroll;
+    overflow:   scroll;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -7,7 +7,17 @@ html {
 }
 
 video {
-	display: block;
-	width: 100%;
-	height: 55%;
+/*
+    display: block;
+    width: 100%;
+    height: 55%;
+*/
+}
+
+.favorited {
+    color: firebrick;
+}
+
+button, .btn, .fa{
+    cursor: pointer;
 }
